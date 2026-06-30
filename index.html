@@ -1,62 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Personal Blog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Personal Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#posts">Blog Posts</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<style>
+body {
+	background: url("http://sunnyneo.com/petpage/PP_folder_bg.jpg");
+	font: 10pt courier new;
+	color: #000000;
+}
+#img {
+	background: url("http://sunnyneo.com/petpage/PP_folder_img.jpg");
+	width: 714px;
+	height: 291px;
+	top: 0px;
+	left: 0px;
+z-index:-1;
+}
+#header {
+	top: 57px;
+	left: 84px;
+	width: 422px;
+	text-align: center;
+	font: 18pt courier new;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+z-index:-1;
+}
+#side {
+	top: 147px;
+	left: 589px;
+	width: 111px;
+	text-align: center;
+z-index:-1;
+}
+#text {
+	top: 125px;
+	left: 55px;
+	width: 527px;
+	text-align: center;
+z-index:-1;
+}
+#nav {
+	top: 105px;
+	left: 55px;
+	width: 530px;
+}
+.nav1, .nav2 {
+	display: block;
+	height: 19px;
+	width: 85px;
+	float: left;
+}
+.nav3, .nav4, .nav5, .nav6, .nav7 {
+	display: block;
+	height: 19px;
+	width: 65px;
+	float: left;
+}
+#nav a {
+	background-repeat: no-repeat;
+}
+.nav1 {
+	background: url("http://sunnyneo.com/petpage/PP_folder_1.png");
+}
+.nav2 {
+	background: url("http://sunnyneo.com/petpage/PP_folder_2.png");
+}
+.nav3 {
+	background: url("http://sunnyneo.com/petpage/PP_folder_3.png");
+}
+.nav4 {
+	background: url("http://sunnyneo.com/petpage/PP_folder_4.png");
+}
+.nav5 {
+	background: url("http://sunnyneo.com/petpage/PP_folder_5.png");
+}
+.nav6 {
+	background: url("http://sunnyneo.com/petpage/PP_folder_6.png");
+}
+.nav7 {
+	background: url("http://sunnyneo.com/petpage/PP_folder_7.png");
+}
+a.nav1:hover {
+	background: url("http://sunnyneo.com/petpage/PP_folder_1h.png");
+}
+a.nav2:hover {
+	background: url("http://sunnyneo.com/petpage/PP_folder_2h.png");
+}
+a.nav3:hover {
+	background: url("http://sunnyneo.com/petpage/PP_folder_3h.png");
+}
+a.nav4:hover {
+	background: url("http://sunnyneo.com/petpage/PP_folder_4h.png");
+}
+a.nav5:hover {
+	background: url("http://sunnyneo.com/petpage/PP_folder_5h.png");
+}
+a.nav6:hover {
+	background: url("http://sunnyneo.com/petpage/PP_folder_6h.png");
+}
+a.nav7:hover {
+	background: url("http://sunnyneo.com/petpage/PP_folder_7h.png");
+}
+#side h1 {
+	font: 14pt courier new;
+	color: #000000;
+	font-weight: bold;
+	border-bottom: 2px solid black;
+	line-height: 13px;
+	margin: 2px;
+}
+#text h1 {
+	font: 15pt courier new;
+	color: #000000;
+	font-weight: bold;
+	line-height: 25px;
+	margin-top: 8px;
+	margin-bottom: 2px;
+	height: 25px;
+	background: url("http://sunnyneo.com/petpage/PP_folder_h1.jpg") no-repeat center center;
+	text-transform: lowercase;
+}
+b {
+	color: #0092db;
+}
+i {
+	color: #666666;
+}
+table {
+	background: none;
+}
+table a img, center p {
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+}
+</style>
 
-    <main>
-        <section id="home">
-            <h2>Introduction</h2>
-            <p>This is a place where I share my thoughts and experiences. Stay tuned for more updates!</p>
-        </section>
+<div id="img" style="position: absolute; z-index: -1;">
+</div>
+<div id="nav" style="position: absolute; z-index: 1;">
+<a href="/myaccount.phtml" class="nav1"></a>
+<a href="/petcentral.phtml" class="nav2"></a>
+<a href="/explore.phtml" class="nav3"></a><a href="/games" class="nav4"></a>
+<a href="/neoboards/index.phtml" class="nav5"></a>
+<a href="/objects.phtml" class="nav6"></a><a href="/nf.phtml" class="nav7"></a>
+</div>
+<div id="header" style="position: absolute;">Page Title Here</div>
+<div id="side" style="position: absolute;">
+<h1>Header</h1>
+Put some text here!<br><br><b>Bold</b><br><br>
+Underlined<br><br><i>Italicized</i>
+</div>
+<div id="text" style="position: absolute;">
+<h1>Header Here</h1>
+Put some text here!<br><b>This is bold text.</b><br>
+This is underlined text.<br><i>This is italicized text.</i>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate writer and developer who enjoys sharing knowledge on various topics.</p>
-        </section>
 
-        <section id="posts">
-            <h2>Latest Blog Posts</h2>
-            <article>
-                <h3>My First Blog Post</h3>
-                <p>Welcome to my first blog post! Here, I’ll be discussing web development basics and more.</p>
-                <a href="blog-post1.html">Read More</a>
-            </article>
-            <article>
-                <h3>Exploring HTML Elements</h3>
-                <p>In this post, we will delve deeper into HTML elements such as block-level and inline elements.</p>
-                <a href="blog-post2.html">Read More</a>
-            </article>
-        </section>
+<h1>Header Here</h1>
+BLAH
 
-        <aside>
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#posts">Blog Posts</a></li>
-            </ul>
-        </aside>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My Personal Blog | Contact: myemail@example.com</p>
-    </footer>
-</body>
-</html>
+<div id="movesavebox" style="position: absolute; top: 0px;"></div>
+</div>
