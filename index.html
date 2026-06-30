@@ -1,195 +1,111 @@
-<style>
 body {
-	background-color: white;
-	background-repeat: repeat-x;
-	background-attachment: fixed;
-	background-position: bottom left;
-}
-#tekst {
-	padding: 5px;
-	padding-top: 263px;
-	border: 1px solid #6AA083;
-	background: #FFFFFF;
-	margin-top: 50px;
-	width: 446px;
-	left: 500px;
-	font: 8pt "century gothic";
-	letter-spacing: 0.5;
-}
-#side {
-	padding: 5px;
-	border: 1px solid #6AA083;
-	left: 275px;
-	width: 200px;
-	top: 200px;
-	background: #FFFFFF;
-	font: 8pt "century gothic";
-	letter-spacing: 0.5;
-}
-a:link, a:visited {
-	text-decoration: none;
-	color: #CA8A4D;
-	font-weight: bold;
-}
-a:hover {
-	text-decoration: none;
-	color: #BA7141;
-	font-weight: bold;
-}
-.smallfont {
-	font: 6pt arial;
-	text-transform: uppercase;
-	color: #B8D5B7;
-	text-decoration: none;
-}
-h1 {
-	color: #879877;
-	font: 14pt georgia;
-	font-style: italic;
-	font-weight: bold;
-	margin-top: 0px;
-	margin-bottom: 3px;
-	background: none;
-	border-bottom: 1px dotted #BADABA;
-}
-#side h1 {
-	background: #BEDDBF;
-	font: 8pt georgia;
-	font-weight: normal;
-	border-bottom: 1px solid #8CC08E;
-	border-top: 1px solid #8CC08E;
-	padding: 3px;
-	text-align: justify;
-}
-#nav {
-	margin-top: -45px;
-	width: 446px;
-	text-align: center;
-	height: 29px;
-	overflow: hidden;
-	top: 303px;
-	left: 505px;
-}
-#nav a {
-	display: block;
-	height: 25px;
-	float: left;
-}
-.n1 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n1.jpg");
-	width: 53px;
-}
-.n2 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n2.jpg");
-	width: 60px;
-}
-.n3 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n3.jpg");
-	width: 40px;
-}
-.n4 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n4.jpg");
-	width: 50px;
-}
-.n5 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n5.jpg");
-	width: 39px;
-}
-.n6 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n6.jpg");
-	width: 71px;
-}
-.n7 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n7.jpg");
-	width: 36px;
-}
-.n8 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n8.jpg");
-	width: 34px;
-}
-.n9 {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_n9.jpg");
-	width: 58px;
-}
-#nav img {
-	border: 0px;
-	margin-left: -2px;
-	margin-right: -2px;
-}
-b {
-	color: #6FB060;
-	font-weight: bold;
-}
-i {
-	color: #CA8A4D;
-}
-u {
-	color: #E1A148;
-}
-a:link, a:visited {
-	color: #AED2AB;
-	font-weight: bold;
-	text-decoration: none;
-}
-a:hover {
-	color: #C8E7CD;
-	font-weight: bold;
-	text-decoration: none;
-}
-table {
-	background: none;
-}
-table a img, center p {
-	height: 0px;
-	width: 0px;
-	overflow: hidden;
-}
-#pic {
-	background: url("http://www.sunnyneo.com/petpage/PP_snowusul_top.jpg");
-	height: 238px;
-	width: 446px;
-	top: 65px;
-	left: 505px;
-	z-index: -1;
-}
-</style>
+  background: #fff;
+  font-size: 0.875em;
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(rgb(251, 220, 220, 0.15), rgb(251, 220, 220, 0.15)), url("/cinnamonbird_cairoovercoat_roxy2alt.png");
+  }
+  
+.wrapper {
+  background: none;
+  top: 0;
+  margin: 0 auto;
+  width: 870px;
+  }
+  
+.sidebar-left, .sidebar-right {
+  width: 175px;
+  }
+  
+.main {
+  width: 500px;
+  margin-left: 185px;
+  }
+  
+.sidebar-left {
+  margin-left: 0px;
+  }
+  
+.wrapper, .links a {
+  color: #4f3d46;
+  }
+  
+.box {
+  border: 3px double #333;
+  background: #fff;
+  padding: 0;
+  }
+  
+.header {
+  border: 3px double #333;
+  background: linear-gradient(rgb(251, 220, 220, 0.75), rgb(251, 220, 220, 0.75));
+  text-align: center;
+  margin-top: 15px;
+  top: 0;
+  height: auto;
+  }
+  
+.links {
+  margin-top: 1em;
+  }
+  
+.title { /*suppress title, since we're putting the title as text in the header box*/
+  display: none;
+  }
 
-<div id="pic" style="position: absolute;"></div>
-<div id="nav" class="nav" style="position: absolute;">
-<a href="/myaccount.phtml" class="n1"></a>
-<a href="/customise/" class="n2"></a>
-<a href="/games/arcade.phtml" class="n3"></a>
-<a href="/explore.phtml" class="n4"></a>
-<a href="/nf.phtml" class="n5"></a>
-<a href="/community" class="n6"></a>
-<a href="/objects.phtml" class="n7"></a>
-<a href="/mall/index.phtml" class="n8"></a>
-<a href="http://nc.neopets.com/membership" class="n9"></a>
-</div>
-<div id="tekst" style="position: absolute; z-index: -2;">
-<p>
+.footer {
+  height: 0;
+  }
+  
+.box h1, .box h2, .box h3, .box h4 {
+  background: #facbd8;
+  margin: 0;
+  padding: 0.35em 0.25em 0.3em 0.25em;
+  text-align: center;
+  border-bottom: 3px double #333;
+  }
+  
+.inner {
+  padding: 0.25em 1em 0.3em 1em;
+  font-size: 1.075em;
+  }
+  
+  
+/* For narrow screens: slightly narrows sidebars, and makes the width
+ * of the main/center div flexible (sized relative to viewport width.)
+ */
+@media(max-width:880px) {
+  .wrapper {
+    width: calc(340px + 50vw);
+    }
+  .sidebar-left, .sidebar-right {
+    width: 160px;
+    }
+  .main {
+    width: 50vw;
+    margin-left: 170px;
+    }
+  }
 
+/*Mobile compatibility. Just turns it all into a vertical layout.*/  
+@media(orientation:portrait) {
+  .wrapper {
+    width: 96vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+  .wrapper-2 {
+    width: 94vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+  .sidebar-left, .main, .sidebar-right {
+    position: relative;
+    width: 92vw;
+    margin: 0.25rem 1vw;
+    }
+  }
 
-
-
-
-
-</p>
-<h1>header</h1>
-<b>Bold</b>, <i>Italic</i>, Underlined, <a href="/~TheSunnyNeo">Linked</a>.<br><br>
-
-Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here.  <br><br><h1>header</h1>
-Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here.  <br><br><h1>header</h1>
-Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here.  <br><br>
-</div>
-<div id="side" style="position: absolute;" align="justify">
- 
-
-
-
-
-
-<center><h1>header</h1></center>
-
-Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here. <br><br><center><h1>header</h1></center>
-Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here.  Text here. </div>
