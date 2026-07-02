@@ -4,7 +4,7 @@ body {
   font-family: monospace;
   padding: 0;
   margin: 0;
-  background-image: url("/Backgrounds/1005.gif");
+  background-image: url("../Backgrounds/1005.gif");
   }
   
 .wrapper {
